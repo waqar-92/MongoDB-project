@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="index.css">
+
+    <script src="/index.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="" role="button" id="add">Add</a>
+            <a href="" id="update" role="button">Update</a>
+            <a href="" id="del" role="button">Delete</a>
+            <a href="">View</a>
+        </nav>
+
+    </header>
+
+    <form id="input_form" action="">
+        <h1>Add Record</h1>
+        <div>
+
+
+            <div>
+                <label for="addname">Name</label>
+                <input id="addname" type="text">
+            </div>
+            <div>
+                <label for="addrollno">Roll No</label>
+                <input id="addrollno" type="text">
+            </div>
+
+            <button type="submit">Add</button>
+        </div>
+    </form>
+
+    <form id="update_form" action="">
+        <h1>Update Record</h1>
+        <div>
+
+
+            <div>
+                <label for="update_name">Name</label>
+                <input id="update_name" type="text">
+            </div>
+            <div>
+                <label for="update_roll_no">Roll No</label>
+                <input id="update_roll_no" type="text">
+            </div>
+
+            <button>Update</button>
+        </div>
+    </form>
+
+    <form id="delete_form" action="">
+        <h1>Delete Record</h1>
+        <div>
+
+            <div>
+                <label for="del_roll_no">Roll No</label>
+                <input id="del_roll_no" type="text">
+            </div>
+
+            <button>Delete</button>
+        </div>
+    </form>
+
+    <section id="view_recoed">
+        <h1>Records</h1>
+        <table id="DataTable">
+            <thead>
+                <tr>
+                    <th>Roll No</th>
+                    <th>Name</th>
+                </tr>
+            </thead>
+            <tbody id="Tbody">
+                <tr>
+                    <td>FA23-BSE-066</td>
+                    <td>Waqar Youna</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p id="noData">No Data Found</p>
+    </section>
+
+
+
+</body>
+
+</html>
